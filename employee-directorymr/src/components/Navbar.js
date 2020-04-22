@@ -10,7 +10,7 @@ const styles = {
     },
     info: {
         color: "white",
-        fontsize: "24px"
+        fontSize: "24px"
 
     },
 
