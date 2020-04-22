@@ -1,0 +1,16 @@
+#container {
+    border: solid;
+    border-width: 1px;
+  }
+  
+  #jumbotron-red {
+    border-bottom: solid;
+    border-color: red;
+    border-width: 5px;
+  }
+  
+  #grey-back {
+    background-color: rgb(231,230,230);
+  }
+  
+  
