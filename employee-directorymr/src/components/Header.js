@@ -36,7 +36,6 @@ function Header(){
             <h1 className="text-left" style={styles.info}>DOB</h1>
         </div>
     </div>
-
     )
 };
 

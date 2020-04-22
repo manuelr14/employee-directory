@@ -9,7 +9,7 @@ const styles = {
  
     },
     info: {
-        color: " rgb (255,255,255)",
+        color: "white",
         fontsize: "24px"
 
     },

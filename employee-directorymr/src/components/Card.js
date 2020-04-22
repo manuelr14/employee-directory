@@ -25,7 +25,7 @@ function Card() {
 
     return (
         <div className="row" id="grey-back" style={styles.row}>
-            <div className="col text-left d-table-row float-left"><img className="img-fluid justify-content-center align-items-center align-content-center align-self-center" data-toggle="tooltip" data-bs-tooltip="" width="60px" height="60px" src="" alt="profile-picture"></img></div>
+            <div className="col text-left d-table-row float-left"><img className="img-fluid justify-content-center align-items-center align-content-center align-self-center" data-toggle="tooltip" data-bs-tooltip="" width="60px" height="60px" src="" alt="profile"></img></div>
             <div className="col text-left d-table-row float-left">
                 <h1 className="text-left" style={styles.info}>Name</h1>
             </div>
