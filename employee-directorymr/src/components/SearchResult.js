@@ -1,6 +1,4 @@
 import React,  { Component} from "react";
-import Header from "./Header";
-import Card from "./Card";
 import Navbar from "./Navbar";
 import Searchbar from "./Searchbar";
 import Container from "./Container";
