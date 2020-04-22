@@ -2,12 +2,9 @@ import React from "react";
 import "../style/style.css";
 
 const styles = {
-    row: {
-        fontsize: "25px",
-    },
-    info: {
 
-        fontsize: "20px",
+    info: {
+        fontSize: "20px",
         padding: " 5px 0px 0px 0px",
 
     },
@@ -19,7 +16,7 @@ function Header(){
 
     return(
 
-        <div className="row" id="container" style={styles.row}>
+        <div className="row" id="container" >
         <div className="col text-left d-table-row float-left">
             <h1 className="text-left" style={styles.info}>Image</h1>
         </div>
