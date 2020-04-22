@@ -30,14 +30,14 @@ function Card(props) {
                 <div className="row" id="grey-back" style={styles.row}>
                     <div className="col text-left d-table-row float-left"><img className="img-fluid justify-content-center align-items-center align-content-center align-self-center" data-toggle="tooltip" data-bs-tooltip="" width="60px" height="60px" src="" alt="profile"></img></div>
                     <div className="col text-left d-table-row float-left">
-                        <h1 className="text-left" style={styles.info}>name}</h1>
+                        <h1 className="text-left" style={styles.info}>{props.name}</h1>
                     </div>
                     <div className="col text-left d-table-row float-left">
-                        <h1 className="text-left" style={styles.info}>phone}</h1>
+                        <h1 className="text-left" style={styles.info}>{props.phone}</h1>
                     </div>
-                    <div className="col text-left d-table-row float-left"><a className="text-center" href="#" style={styles.link}>Link</a></div>
+                    <div className="col text-left d-table-row float-left"><a className="text-center" href="#" style={styles.link}>{props.email}</a></div>
                     <div className="col text-left float-left">
-                        <h1 className="text-left" style={styles.info}>DOB}</h1>
+                        <h1 className="text-left" style={styles.info}>{props.dob}</h1>
                     </div>
                 </div>
 
