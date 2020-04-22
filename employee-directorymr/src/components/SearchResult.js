@@ -41,11 +41,11 @@ class SearchResult extends Component {
             <div>
                 <Navbar />
                 <Searchbar
-                    search={this.state.search}
-                    handleFormSubmit={this.handleFormSubmit}
-                    handleInputChange={this.handleInputChange}
+                    // search={this.state.search}
+                    // handleFormSubmit={this.handleFormSubmit}
+                    // handleInputChange={this.handleInputChange}
                      />
-                <Container results={this.state.results}/>
+                <Container/>
 
 
             </div>

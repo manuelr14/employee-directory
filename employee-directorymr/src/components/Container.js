@@ -17,13 +17,13 @@ const styles = {
 
 
 
-function Container() {
+function Container(props) {
     
     return (
     <div className="container text-center" style={styles.info}>
         
         <Header/>
-        <Card/>
+        <Card />
     
     </div>
 
