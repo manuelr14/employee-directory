@@ -3,18 +3,18 @@ import "../style/style.css";
 
 const styles = {
     row: {
-        fontsize: "25px",
+        fontSize: "25px",
         height: "65px"
     },
     info: {
 
-        fontsize: "15px",
+        fontSize: "15px",
         margin: " 17px 0px 0px 0px",
 
     },
     link: {
 
-        fontsize: "15px",
+        fontSize: "15px",
         target: " blank",
       }
 
