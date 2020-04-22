@@ -24,6 +24,7 @@ function Searchbar(props) {
                 <input type="search" 
                 onChange={props.handleInputChange}
                 value={props.search}
+                name="search"
                 placeholder="Search" 
                 style={styles.searchbar}></input>
 
