@@ -7,9 +7,7 @@ import Container from "./components/Container";
 function App() {
   return (
     <div>
-      <Navbar />
-      <Searchbar />
-    <Container/>
+      <SearchResult/>
     
 
     </div>

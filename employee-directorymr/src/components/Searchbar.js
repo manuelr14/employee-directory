@@ -15,13 +15,17 @@ const styles = {
 
 
 
-function Searchbar() {
+function Searchbar(props) {
 
     return (
         <div className="row" style={styles.div}>
 
             <div className="col">
-                <input type="search" placeholder="Search" style={styles.searchbar}></input>
+                <input type="search" 
+                onChange={props.handleInputChange}
+                value={props.search}
+                placeholder="Search" 
+                style={styles.searchbar}></input>
 
             </div>
         </div>
