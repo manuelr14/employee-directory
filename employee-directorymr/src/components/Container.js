@@ -18,13 +18,16 @@ const styles = {
 
 
 function Container(props) {
+    console.log(props.results)
+   
     
     return (
     <div className="container text-center" style={styles.info}>
         
         <Header/>
+        {props.results.map((result) => (
         <Card />
-    
+        ))}
     </div>
 
 

@@ -17,8 +17,10 @@ export default {
                         // email : employee.email,
                         // phone : employee.phone,
                         // dob   : employee.dob.date
-					};
-				});
+                    };
+                    
+                });
+                
 			});
 	}
 };
