@@ -26,7 +26,11 @@ function Container(props) {
         
         <Header/>
         {props.results.map((result) => (
-        <Card name={result.login}/>
+        <Card name={result.login}
+              image={result.image}
+              email={result.profileUrl}  
+        
+        />
         ))}
     </div>
 
