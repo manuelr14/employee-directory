@@ -12,7 +12,7 @@ import "../style/style.css"
 class SearchResult extends Component {
     state = {
         result: [],
-        search: ''
+        search: ""
     };
     componentDidMount() {
         this.employeeList();
@@ -32,19 +32,19 @@ class SearchResult extends Component {
     //         .catch(err => console.log(err));
     // };
 
-    // handleInputChange = event => {
-    //     const name = event.target.name;
-    //     const value = event.target.value;
-    //     this.setState({
-    //         [name]: value
-    //     });
-    //     this.searchEmployee(this.state.search);
-    // };
+    handleInputChange = event => {
+        const name = event.target.name;
+        const value = event.target.value;
+        this.setState({
+            [name]: value
+        });
+       
+    };
 
-    // handleFormSubmit = event => {
-    //     event.preventDefault();
-    //     this.searchGiphy(this.state.search);
-    // };
+    handleFormSubmit = event => {
+        event.preventDefault();
+        this.employeeList(this.state.search);
+    };
 
 
     render() {
@@ -53,9 +53,9 @@ class SearchResult extends Component {
             <div>
                 <Navbar />
                 <Searchbar
-                // search={this.state.search}
-                // handleFormSubmit={this.handleFormSubmit}
-                // handleInputChange={this.handleInputChange}
+                search={this.state.search}
+                handleFormSubmit={this.handleFormSubmit}
+                handleInputChange={this.handleInputChange}
                 />
                 <Container results={this.state.result}>
                     {/* <Header />
