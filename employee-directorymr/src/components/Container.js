@@ -26,7 +26,7 @@ function Container(props) {
         
         <Header/>
         {props.results.map((result) => (
-        <Card />
+        <Card name={result.login}/>
         ))}
     </div>
 
