@@ -23,7 +23,7 @@ function Searchbar(props) {
             <div className="col">
                 <input type="search" 
                 onChange={props.handleInputChange}
-                value={props.search}
+                value={props.value}
                 name="search"
                 placeholder="Search" 
                 style={styles.searchbar}></input>

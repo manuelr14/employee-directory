@@ -22,7 +22,7 @@ const styles = {
 
 
 function Card(props) {
-     console.log(props.result)
+    //  console.log(props.result)
     return (
 
         <ul className="list-group">

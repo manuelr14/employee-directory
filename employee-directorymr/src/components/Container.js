@@ -19,6 +19,11 @@ const styles = {
 
 function Container(props) {
     console.log(props.results)
+    
+    const employees = props.results.filter(employee => employee.login == props.search);
+    // Set this.state.friends equal to the new friends array
+    console.log(props.search)
+    console.log(employees)
    
     
     return (
