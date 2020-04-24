@@ -18,7 +18,7 @@ class SearchResult extends Component {
         this.employeeList();
     }
 
-    employeeList = (query) => {
+    employeeList = query => {
         API.getRandomEmployee(query)
             .then((res) => this.setState({ result: res }))
             //  console.log(res))
@@ -33,10 +33,9 @@ class SearchResult extends Component {
     // };
 
     handleInputChange = event => {
-        const name = event.target.name;
         const value = event.target.value;
         this.setState({
-            [name]: value
+            search: value
         });
        
     };
@@ -57,20 +56,9 @@ class SearchResult extends Component {
                 handleFormSubmit={this.handleFormSubmit}
                 handleInputChange={this.handleInputChange}
                 />
-                <Container results={this.state.result}>
-                    {/* <Header />
-                    {/* {this.state.result.map(employees => ( */}
-        
-                        {/* <Card
-                            // results={this.state.result} */}
-                            {/* email={employees.profileUrl}
-                            phone= {employees.phone}
-                            dob= {employees.dob.date}
-                            image={employees.image} */}
+                <Container results={this.state.result}/>
 
-                        /> */}
-                    {/* ))}  */}
-                </Container>
+               
             </div>
 
         )
