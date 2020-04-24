@@ -12,13 +12,13 @@ import "../style/style.css"
 class SearchResult extends Component {
     state = {
         result: [],
-        search: ''
+        search: ""
     };
     componentDidMount() {
         this.employeeList();
     }
 
-    employeeList = (query) => {
+    employeeList = query => {
         API.getRandomEmployee(query)
             .then((res) => this.setState({ result: res }))
             //  console.log(res))
@@ -32,19 +32,18 @@ class SearchResult extends Component {
     //         .catch(err => console.log(err));
     // };
 
-    // handleInputChange = event => {
-    //     const name = event.target.name;
-    //     const value = event.target.value;
-    //     this.setState({
-    //         [name]: value
-    //     });
-    //     this.searchEmployee(this.state.search);
-    // };
+    handleInputChange = event => {
+        const value = event.target.value;
+        this.setState({
+            search: value
+        });
+       
+    };
 
-    // handleFormSubmit = event => {
-    //     event.preventDefault();
-    //     this.searchGiphy(this.state.search);
-    // };
+    handleFormSubmit = event => {
+        event.preventDefault();
+        this.employeeList(this.state.search);
+    };
 
 
     render() {
@@ -53,24 +52,13 @@ class SearchResult extends Component {
             <div>
                 <Navbar />
                 <Searchbar
-                // search={this.state.search}
-                // handleFormSubmit={this.handleFormSubmit}
-                // handleInputChange={this.handleInputChange}
+                search={this.state.search}
+                handleFormSubmit={this.handleFormSubmit}
+                handleInputChange={this.handleInputChange}
                 />
-                <Container results={this.state.result}>
-                    {/* <Header />
-                    {/* {this.state.result.map(employees => ( */}
-        
-                        {/* <Card
-                            // results={this.state.result} */}
-                            {/* email={employees.profileUrl}
-                            phone= {employees.phone}
-                            dob= {employees.dob.date}
-                            image={employees.image} */}
+                <Container results={this.state.result}/>
 
-                        /> */}
-                    {/* ))}  */}
-                </Container>
+               
             </div>
 
         )
