@@ -24,24 +24,47 @@ function Container(props) {
     // Set this.state.friends equal to the new friends array
     console.log(props.search)
     console.log(employees)
+
+    if (employees != props.search  ){
+        return (
+            <div className="container text-center" style={styles.info}>
+                
+                <Header/>
+                {employees.map((result) => (
+                <Card name={result.login}
+                      image={result.image}
+                      email={result.profileUrl}  
+                
+                />
+                ))}
+            </div>
+        
+        
+            )
+            
+
+    } else {
+        return (
+            <div className="container text-center" style={styles.info}>
+                
+                <Header/>
+                {props.results.map((result) => (
+                <Card name={result.login}
+                      image={result.image}
+                      email={result.profileUrl}  
+                
+                />
+                ))}
+            </div>
+        
+        
+            )
+            
+
+    }
    
     
-    return (
-    <div className="container text-center" style={styles.info}>
-        
-        <Header/>
-        {props.results.map((result) => (
-        <Card name={result.login}
-              image={result.image}
-              email={result.profileUrl}  
-        
-        />
-        ))}
-    </div>
-
-
-    )
-    };
+}
 
 
 export default Container;
