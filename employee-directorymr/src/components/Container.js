@@ -24,8 +24,9 @@ function Container(props) {
     // Set this.state.friends equal to the new friends array
     console.log(props.search)
     console.log(employees)
+    console.log(employees.length)
 
-    if (employees != props.search  ){
+    if (employees.length != 0  ){
         return (
             <div className="container text-center" style={styles.info}>
                 
